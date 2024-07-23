@@ -14,7 +14,7 @@
     }
 
     .r1 button{
-        width: 20%;
+        /* width: 20%; */
         background-color: black;
         color: white;
         border: none;
@@ -64,31 +64,38 @@
         position: relative;
         padding-top: 50px;
     }
-    .im{
+    .cc2{
         width: 100%; 
         height: 100%;
+        animation-name: eg;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
     }
-    .im:hover{
-        content: url(house2.avif);
+    @keyframes eg{
+        0% {content: url(house1.avif);}
+        33% {content: url(house2.avif);}
+        66% {content: url(house3.jpg);}
+        100% {content: url(house4.webp);}
     }
+
 
    
 </style>
 <body>
     <div class="container-fluid" >
         <div class="row r">
-            <div class="col-6 c1">
+            <div class="col-xl-6 col-md-12 c1 ">
                 <div class="row r1">
-                    <h1>We build your dream <br>house with our passion</h1>
+                    <h1 style="font-size: 50px;">We build your dream <br>house with our passion</h1>
                     <p><br><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate voluptatibus earum cupiditate provident incidunt architecto, ipsum minus quod quisquam perspiciatis, nam id tempore, officiis ullam fugit! Laboriosam, aliquid sint.</b></p>
-                    <button>Get started</button>
+                    <button class="col-xl-4 col-sm-12">Get started</button>
                 </div>
                 <div class="row r2">
-                    <div class="col c2">
-                        <b>178K+</b><br><br>
+                    <div class="col-xl col-md-6 col-sm-12 c2">
+                        <b>178K+</b><br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore quam facilis ut. Officia, quisquam ea illo tenetur praesentium</p>
                     </div>
-                    <div class="col c3">
+                    <div class="col-xl col-md col-sm-12 c3">
                         <b>362</b><br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eveniet et eaque minima iure expedita, consequatur esse ut, doloremque</p>
                     </div>
@@ -103,8 +110,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 cc">
-                <img src="house1.avif" alt="" class="im">
+            <div class="col-xl-6 col-md-12 cc ">
+                <div class="cc2">
+
+                </div>
                 <div style="border-radius: 50%;height: 100px;width: 100px;position: absolute;right: 45%;top: 1%;border: 2px solid black;text-align: center;background-color: white;padding: 25px">
                     <img src="heart.png" alt="heart" height="40px" width="40px">
                 </div>
